@@ -5,7 +5,7 @@ export default function Footdetail({ foodId }) {
   const [food, setFood] = useState({});
   const [isLoading, setISLoading] = useState(true);
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
-  const API_KEY = "3c2811fa94ff4f65982c0ce4b700b70d";
+  const API_KEY = "3c2811fa94ff4f65982c0ce4b700bxxx";
   useEffect(() => {
     async function fetchFood() {
       const res = await fetch(`${URL}?apiKey=${API_KEY}`);
